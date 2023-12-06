@@ -16,6 +16,7 @@
     border: none;
     border-radius: 0;
     padding: 15px 25px;
+    
 }
 button, input {
     overflow: visible;
@@ -35,5 +36,5 @@ button {
     transition: all 500ms;
     background-image: linear-gradient(to right, #61ba6d 0%, #83c331 51%, #61ba6d 100%);
     font-weight: 600;
-
+   
 }
