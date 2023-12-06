@@ -17,7 +17,7 @@ body {
 .info {
     display: flex;
     color: #F9FAF8;
-    background-color: #1F2937;
+    background: linear-gradient(90deg, #61ba6d 0%, #83c331 51%, #61ba6d 100%);
     align-items: center;
     justify-content: center;
     padding: 90px;
