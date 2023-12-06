@@ -81,21 +81,32 @@ ul li a:hover {
 
 /* mignonne */
 
-#home{
-    position: fixed;
+/* #home{
+    position: relative;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    
 }
 #home img{
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     position: absolute;
+    
 }
 .content {
-    position: relative;
+    position: absolute;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     padding: 20px;
+    top: 26%;
     bottom: 0;
+    
   }
+.content h1{
+    top: 20%;
+} */
+
+
+
