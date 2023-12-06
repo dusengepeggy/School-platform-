@@ -77,3 +77,25 @@ ul li a:hover {
     background-color: gainsboro;
     padding: 8px;
 }
+
+
+/* mignonne */
+
+#home{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+#home img{
+    width: 100%;
+    position: absolute;
+}
+.content {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    padding: 20px;
+    bottom: 0;
+  }
