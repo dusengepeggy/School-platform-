@@ -1,45 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/form.css'>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/form.css">
 </head>
+
 <body>
-    <main >
-        <a class="revert" href="index.html">Go back</a>
+
+    <div id="contact-form">
         <img src="../pictures/logo.png" alt="school logo">
-        
-        <h1>REGISTRATION FORM</h1>
-        <form action="">
-            <label for="fname" >First Name</label>
-            <input type="text" id="fname" name="fname" required>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="name" required>
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname" required>
-            <p>Choose gender</p>
-            <div class="gend">
-                <label for="m"><input type="radio" name="gender"  value="M" id="m">Male</label>
-                <label for="f"><input type="radio" name="gender" value="F" id="f">Female</label>
-                <label for="o"><input type="radio" name="gender" value="O" id="o">Other</label>
-            </div>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required >
-            
-            <p>We care about your personal data. For more information, please consult the <a href="">Privacy Policy</a>.</p>
-            <div>
-            <input type="radio" id="agree"><label for="agree">  I have read and agree to the Privacy Policy.</label>
-            </div>
-        
-    
-            <input type="submit" class="button" value="Submit"/>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+
         </form>
-    </main>
+            <div id="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <div id="whatsapp">
+                    <img src="whatsup.png" alt="WhatsApp Icon">
+                    <p>+25078909876</p>
+                </div>
+            </div>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="form.js"></script>
+
 </body>
+
 </html>
