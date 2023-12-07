@@ -44,9 +44,9 @@ ul li a:hover {
     height: auto;
     background-color: white;
     box-shadow: 20px;
-    background: #61ba6d;
-    background-image: linear-gradient(to right, #001f3f, #ffffff);;
-    background-image: linear-gradient(to right, #001f3f, #ffffff);;
+    background: #5c9d65;
+    background-image: -webkit-linear-gradient(left, #61ba6d 0%, #83c331 51%, #61ba6d 100%);
+    background-image: linear-gradient(to right, #61ba6d 0%, #83c331 51%, #61ba6d 100%);
     
 
 }
@@ -73,11 +73,9 @@ ul li a:hover {
 }
 
 .about {
-    flex-basis: 400px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-right: 50px;
+    
+    text-align: center;
+    font-size: 40px;
 }
 
 p {
@@ -88,10 +86,11 @@ p {
 h1 {
     font-size: 48px;
     font-weight: bold;
-    color: #F9FAF8;
+    color: black;
     margin: 0;
     font-family: 'Roboto', arial;
 }
+
 
 .info button {
     display: block;
@@ -201,13 +200,54 @@ h3 {
 }
 
 /*cards part*/
-.photoabout{
-    display: flex;
-    flex-direction: row;
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    
+  }
+  .card img {
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 1rem;
+    border:-1rem solid #474e5d;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
     width: 100%;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 30px;
-    padding: 30px;
-       
-}
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+/*   
+
