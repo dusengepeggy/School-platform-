@@ -45,8 +45,8 @@ ul li a:hover {
     background-color: white;
     box-shadow: 20px;
     background: #61ba6d;
-    background-image: -webkit-linear-gradient(left, #61ba6d 0%, #83c331 51%, #61ba6d 100%);
-    background-image: linear-gradient(to right, #61ba6d 0%, #83c331 51%, #61ba6d 100%);
+    background-image: linear-gradient(to right, #001f3f, #ffffff);;
+    background-image: linear-gradient(to right, #001f3f, #ffffff);;
     
 
 }
