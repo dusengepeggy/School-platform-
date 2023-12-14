@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../contact-us/contact.css">
     <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="icon" href="../pictures/logo.png" >
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Contact Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -15,20 +16,40 @@
 <body>
     
     <div class="header">
-        <div class="container">
-            <div class="A1-nav">
-                <a href="" class="header-content"> INFINITY WISDOM SCHOOL</a>
-            </div>
-            <div class="A2-nav">
-                <ul>
-                    <li> <a href="../main/index.html" class="button-1">Home</a></li>
-                    <li> <a href="../contact-us/contact.html" class="button-3">Contact</a></li>
-                    <li> <a href="../apply/application.html" class="button-3" target="_blank">Apply</a></li>
-                    <li> <a href="../about-us/about.html" class="button-3">About</a></li>
-                </ul>
-
+        <div class="header">
+            <div class="container">
+                <!-- <div class="A1-nav">
+                    <a href="" class="header-content"> IWS </a>
+                </div> -->
+                <div class="A2-nav start">
+                    <ul class="nav1">
+                      <li  class="header-content">IWC</li>
+                      
+                      <li> <a href="../main/index.html" class="button-1 tohide ">Home</a></li>
+                      <li> <a href="../contact-us/contact.html" class="button-3 tohide">Contact</a></li>
+                      <li> <a href="../apply/application.html" class="button-3 tohide" target="_blank">Apply</a></li>
+                      <li> <a href="../about-us/about.html" class="button-3 tohide">About</a>
+                      <li class="menuicon" onclick=showbar()><ion-icon name="reorder-four-outline"></ion-icon></li>
+                      </li>    
+                      
+                    </ul>
+    
+                </div>
+                <nav class="toshow">
+                  
+                  <ul class="nav2">
+                      
+                    <li onclick=hidebar()><ion-icon  name="close-outline"></ion-icon></li>
+                    <li ><a href='../main/index.html'>Home</a></li>
+                    <li><a href='../contact/contact.html'>Contact us</a></li>
+                    <li><a href="../apply/application.html">Apply</a></li>
+                    <li><a href="../about-us/about.html">About us</a></li>
+                  </ul>
+              </nav>
             </div>
         </div>
+       <script src="../js/nav.js"></script>
+    
     </div>
   
   
