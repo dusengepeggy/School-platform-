@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../apply/application.css">
+    <script src='main.js'></script>
+</head>
+<body>
+   
+    <div class="header">
+        <div class="container">
+            <div class="A1-nav">
+                <a href="" class="header-content"> INFINITY WISDOM SCHOOL</a>
+            </div>
+            <div class="A2-nav">
+                <ul>
+                    <li> <a href="../main/index.html" class="button-1">Home</a></li>
+                    <li> <a href="../contact-us/contact.html" class="button-3">Contact</a></li>
+                    <li> <a href="../apply/application.html" class="button-3" target="_blank">Apply</a></li>
+                    <li> <a href="../about-us/about.html" class="button-3">About</a></li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <img src="../pictures/logo.png" alt="school logo">
+            
+        <h1>REGISTRATION FORM</h1>
+        <form action="">
+            <label for="fname" >First Name</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required>
+            <p>Choose gender</p>
+            <div class="gend">
+                <label for="m"><input type="radio" name="gender"  value="M" id="m">Male</label>
+                <label for="f"><input type="radio" name="gender" value="F" id="f">Female</label>
+                <label for="o"><input type="radio" name="gender" value="O" id="o">Other</label>
+            </div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required >
+            
+            <p>We care about your personal data. For more information, please consult the <a href="">Privacy Policy</a>.</p>
+            <div>
+            <input type="radio" id="agree"><label for="agree">  I have read and agree to the Privacy Policy.</label>
+            </div>
+            <input type="submit" value="SUBMIT">
+        </form> 
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycby9QxzjZvQViLek0mO_J18arSdj4DxnzAmIswCkATPUX-SI84Oy4jjQA2-IOjGqQbWW/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            });
+        
+        </script>
+    </div>  
+    <footer class="footer">
+        <div id="footer">
+          <div id="contact-info">
+            <div>
+              <p>Contact Us:</p>
+              <p>Email:ifw@gmail.com </p>
+              <p>Phone:+250 789 123 450</p>
+            </div>
+            <div>
+              <p>Address:</p>
+              <p>123 Main Street, Cityville</p>
+              <p>Country, Zip Code</p>
+            </div>
+          </div>
+          <div id="social-media">
+            <a href="#" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="../footer.js"></script>
+</body>
+</html>

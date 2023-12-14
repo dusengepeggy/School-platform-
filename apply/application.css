@@ -1,0 +1,116 @@
+
+main {
+    margin: auto;
+    
+    width: 90%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .container2{
+    background:linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)); 
+    display: flex;
+    flex-direction: column;
+    margin: 10% auto auto auto;
+    width: 50%;
+    align-items: center;
+   
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container2 img{
+    width: 50%;
+  }
+  form {
+      width: 80%;
+      border-radius: 10px;
+      
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      background:linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)); 
+  }
+  
+  .button {
+      background-color: rgba(23, 29, 23,0.3);
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+  .button:hover{
+      background-color: rgba(23, 29, 23,0.5);
+  }
+  
+  input{
+      width: 100%;
+      padding: 10px;
+      margin: 15px auto;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+  input[type='radio']{
+      width: unset;
+  
+  }
+  input[type='submit']{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  input[type='submit']:hover{
+    background-color: #45a049;
+  }
+  .gend {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+  .gend input{
+      width:unset;
+  }
+  
+  .revert{
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      display: inline-block;
+      border:transparent;
+      border-radius: 4px;
+      color: black;
+      text-decoration: none;
+      
+  }
+  
+  .revert:hover{
+      
+      color: rgb(69, 159, 69);
+  }
+  footer{
+    margin-top: 20%;
+    background-color: #fff;
+  }
+  @media (width <= 768px) {
+    .container2 h1{
+         font-size: 20px;
+ 
+    }
+    
+  }
+  
