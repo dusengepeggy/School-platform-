@@ -1,20 +1,25 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-nav {
-    background: linear-gradient(to right, #001f3f, #ffffff, #000000); /* Dark blue, white, and black gradient */
+/* nav {
+    
+    background: linear-gradient(to right, #001f3f, #ffffff, #000000); 
     padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow for depth */
-}
-
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+} */
+/* 
 nav a {
     color: #fff;
     text-decoration: none;
@@ -23,23 +28,23 @@ nav a {
     padding: 10px;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
-}
+} */
 
 nav a:hover {
     background: #fff;
-    color: #333;
+    
 }
 
 /* Add more styling for responsiveness if needed */
 
-body {
+/* body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-}
+} */
 
-nav a {
+/* nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
@@ -47,19 +52,19 @@ nav a {
     padding: 10px;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
-}
+} */
 
 
 
 /* Add more styling for responsiveness if needed */
 
 
-body {
+/* body {
     font-family: Verdana, sans-serif;
     font-size: 15px;
     width: 100%;
     line-height: 1.5;
-}
+} */
 
 a {
 
@@ -67,18 +72,17 @@ a {
 }
 
 /* ------ header section ------*/
-.header {
+/* .header {
     position: fixed;
-    z-index: 1000;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: white;
     box-shadow: 20px;
     
 
-}
+} */
     
 
 .header-content {
@@ -93,6 +97,11 @@ a {
 
 .A1-nav a {
     text-decoration: none;
+}
+.header{
+   width:100% ; 
+   background-color: #fff;
+   box-shadow:20px ;
 }
 .container {
     display: flex;
@@ -112,6 +121,11 @@ ul {
 
 
 }
+.start
+{
+    width: 100%;
+    
+}
 
 ul li a{
     text-decoration: none;
@@ -120,11 +134,69 @@ ul li a{
     padding: 20px;
 }
 
-ul li a:not(.dropdown):hover {
+ul li a:hover {
     /* background-color: gainsboro; */
-    padding: 8px;
+    /* padding: 8px; */
+   background-color: unset;
     border-bottom:2px solid #000000 ;
 }
+.nav1{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    /* padding: 10px; */
+    
+  
+   
+}
+.nav1 li:first-child{
+     margin-right: auto;
+
+}
+.menuicon{
+    display: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+   
+}
+
+.nav2{
+    width: 100%;
+    display: none;
+    top: 0;
+    right: -22px;
+    position: fixed;
+    width:40%;
+    height: 100vh; 
+    flex-direction:column;
+    justify-content: flex-start;
+    gap:8%;
+    padding: 10px;
+    background-color: rgba(209, 207, 207, 0.5) ;
+    z-index: 999;
+    color: #000000;
+}
+
+@media (max-width:600px){
+    .tohide{
+        display: none;
+    }
+    .menuicon{
+        display: block;
+    }
+    .toshow .nav2{
+        display: flex;
+       
+    }
+
+}
+
 
 
 
