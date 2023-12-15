@@ -1,74 +1,167 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+* {
     padding: 0;
-    background-color: #f4f4f4;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
-#contact-form {
-  
-    max-width: 400px;
-    height: 50%;
-    
-    margin: 5% auto auto auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-image: url('../contactForm/lion.jpg'); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
-
-#contact-form img {
-    width: 60%;
-    max-height: 100px;
-    /* Adjust the maximum height of the logo */
+body::after {
+    content: "";
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(227, 227, 242, 0.8);
+}
+section {
+    position: relative;
+    z-index: 3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.container3 {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.section-header h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 3em;
     margin-bottom: 20px;
 }
-
-#social-icons {
-    text-align: center;
-    margin-top: 20px;
+.section-header p {
+    color: black;
 }
-
-#social-icons a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-size: 24px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-#whatsapp {
+.row {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-top: 20px;
+    justify-content: space-between;
 }
-
+.contact-info3-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+.contact-info3-icon {
+    align-items: center;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+.contact-info3-icon i {
+    
+    font-size: 50px;
+    line-height: 70px;
+    
+}
+.contact-info3-content {
+    margin-left: 20px;
+}
+.contact-info3-content h4 {
+    color: #1DA9C0;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+.contact-info3-content p {
+    color: black;
+    font-size: 1em;
+}
+.contact3-form {
+    background-color: #fff;
+    padding: 40px;
+    width: 45%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.contact3-form h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+.contact3-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact3-form .input-box3 input,
+.contact3-form .input-box3 textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contact3-form .input-box3 span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contact3-form .input-box3 input:focus~span,
+.contact3-form .input-box3 textarea:focus~span {
+    color: #E91E63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contact3-form .input-box3 input[type="submit"] {
+    width: 100%;
+    background: #00BCD4;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #00BCD4;
+    transition: 0.5s;
+}
+.contact3-form .input-box input[type="submit"]:hover {
+    background: #FFF;
+    color: #00BCD4;
+}
+@media (max-width: 991px) {
+    section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .contact3-info {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .contact3-form {
+        width: 100%;
+    }
+}
