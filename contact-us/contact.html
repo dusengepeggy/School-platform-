@@ -64,7 +64,7 @@
           <div class="info3">
             <div class="contact-info3-item">
               <div class="contact-info3-icon">
-                <i class="fas fa-home"></i>
+                <i class="fas fa-home mignonne"></i>
               </div>
               <div class="contact-info3-content">
                 <h4>Address</h4>
@@ -73,7 +73,7 @@
             </div>
             <div class="contact-info3-item">
               <div class="contact-info3-icon">
-                <i class="fas fa-phone"></i>
+                <i class="fas fa-phone mignonne"></i>
               </div>
               <div class="contact-info3-content">
                 <h4>Phone</h4>
@@ -82,7 +82,7 @@
             </div>
             <div class="contact-info3-item">
               <div class="contact-info3-icon">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope mignonne"></i>
               </div>
               <div class="contact-info3-content">
                 <h4>Email</h4>
@@ -91,25 +91,46 @@
             </div>
           </div>
           <div class="contact3-form">
-            <form action="" id="contact3-form">
+            <form action="" id="contact3-form" name="submit-to-google-sheet">
               <h2>Send Message</h2>
               <div class="input-box3">
-                <input type="text" placeholder="enter your name">
+                <input type="text" name="Name" placeholder="enter your name">
               </div>
               <div class="input-box3">
-                <input type="email" placeholder="enter your Email">
+                <input type="email" name="Email" placeholder="enter your Email">
               </div>
               <div class="input-box3">
-                <textarea placeholder="enter your text"></textarea>
+                <textarea name="Message" placeholder="enter your message"></textarea>
               </div>
               <div class="input-box3">
                 <input type="submit" value="Send" name="">
               </div>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
       </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="form.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzXBb_g8nWTPM4Op8aDFSWHugLurD7-EHZ5ERGTPX2PfHNKv8ZyEFe1B2LAUZjpzXkE/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = "Good!!!, Your message was sent succefully."
+              setTimeout(function(){
+                msg.innerHTML =""
+              },3000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
   
 
     

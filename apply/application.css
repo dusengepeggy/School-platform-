@@ -106,6 +106,9 @@ main {
     margin-top: 20%;
     background-color: #fff;
   }
+  #msg{
+    color:#00BCD4;
+  }
   @media (width <= 768px) {
     .container2 h1{
          font-size: 20px;

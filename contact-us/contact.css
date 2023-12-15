@@ -149,6 +149,17 @@ section {
     background: #FFF;
     color: #00BCD4;
 }
+#msg{
+    color: #1DA9C0;
+}
+.svg-inline--fa {
+    display: var(--fa-display,inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+    margin-top: 23px;
+    font-size: 20px;
+}
 @media (max-width: 991px) {
     section {
         padding-top: 50px;
